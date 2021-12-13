@@ -16,9 +16,7 @@ export default async () => {
         synchronize: true,
         logging: ['query', 'error'],
     }).then(connection => {
-        console.group('Created connection');
-        console.log(connection.isConnected);
-        console.groupEnd();
+        console.log('mysql connection established');
     }).catch(error => console.log(error));
 
 }
