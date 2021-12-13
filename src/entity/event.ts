@@ -21,11 +21,11 @@ export class Event {
     updated_at: Date;
 
 
-    @Column('text')
+    @Column('varchar')
     title: string;
 
 
-    @Column('text', {
+    @Column('varchar', {
         nullable: true,
     })
     description: string;

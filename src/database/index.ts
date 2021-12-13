@@ -1,6 +1,8 @@
 import "reflect-metadata";
 import { createConnection } from "typeorm";
 import { Event } from "../entity/event";
+import User from "../entity/user";
+import RefreshToken from "../entity/refreshToken";
 
 export default async () => {
     return await createConnection({
@@ -11,7 +13,7 @@ export default async () => {
         password: "admin",
         database: "event-manager",
         entities: [
-            Event
+            Event, User, RefreshToken
         ],
         synchronize: true,
         logging: ['query', 'error'],
