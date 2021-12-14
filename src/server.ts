@@ -17,9 +17,7 @@ export const bootstrap = async () => {
     app.use(ApiRouter.routes());
     app.use(ApiRouter.allowedMethods());
 
-    const server = createServer(app.callback());
-
-    return server;
+    return createServer(app.callback());
 };
 
 export const startup = async () => {
