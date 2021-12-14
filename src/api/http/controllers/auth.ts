@@ -15,7 +15,11 @@ class AuthController extends Controller {
     }
 
     // @ts-ignore
-    @endpoint({ statusCode: StatusCodes.OK, method: 'post', path: '/login' })
+    @endpoint({
+        statusCode: StatusCodes.OK,
+        method: 'post',
+        path: '/login'
+    })
     async logIn(ctx: ILoginRouterContext) {
         return await AuthService.logIn(ctx.request.body);
     }
