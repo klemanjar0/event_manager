@@ -8,7 +8,7 @@ export default async () => {
         host: "localhost",
         port: 3306,
         username: "root",
-        password: "123456",
+        password: "admin",
         database: "event-manager",
         entities: [
             ...models

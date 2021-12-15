@@ -2,6 +2,8 @@ import Controller from './controller';
 import { ExportController } from '../../../decorators';
 import AuthController from '../controllers/auth';
 import UserController from '../controllers/user';
+import GraphQLController from '../controllers/graphql';
+
 
 @ExportController(AuthController)
 @ExportController(UserController)
